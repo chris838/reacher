@@ -56,7 +56,7 @@ Below is the summary for the value network. Again we use `ReLU` on the hidden la
 
 As required, the agent is able to receive an average reward (over 100 episodes, and over all 20 agents) of at least +30. This is reached after just 92 episodes.
 
-![Reward Graph of PPO](https://github.com/chris838/reacher/blob/master/results/ppo-reacher.png)
+![Reward Graph of PPO](https://github.com/chris838/reacher/blob/master/ppo-reacher.png)
 
 
 
