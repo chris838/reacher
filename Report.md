@@ -1,7 +1,7 @@
 # Udacity Deep Reinforcement Learning Nanodegree
 # Project 2: Continuous Control
 
-This project is an attempt to solve the reinforcement learning test environment called Reacher, which simulates 20 robotic arms in 3D and tasks the agent with controlling their movements in order to reach a specified target region. The required score of 30 (average return over 100 consecutive episodes) was achieved after 92 episodes, using a version of proximal policy optimisation.
+This project is an attempt to solve the reinforcement learning test environment called Reacher, which simulates 20 robotic arms in 3D and tasks the agent with controlling their movements in order to reach a specified target region. The required score of 30 (average return over 100 consecutive episodes) was achieved after 192 episodes, using a version of proximal policy optimisation.
 
 
 ## Learning algorithm
@@ -54,7 +54,7 @@ Below is the summary for the value network. Again we use `ReLU` on the hidden la
 
 # Results
 
-As required, the agent is able to receive an average reward (over 100 episodes, and over all 20 agents) of at least +30. This is reached after just 92 episodes.
+As required, the agent is able to receive an average reward (over 100 episodes, and over all 20 agents) of at least +30. This is reached after just 192 episodes.
 
 ![Reward Graph of PPO](https://github.com/chris838/reacher/blob/master/ppo-reacher.png)
 

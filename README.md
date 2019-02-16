@@ -1,6 +1,6 @@
 # Solving Reacher using Proximal Policy Optimisation
 
-This project is an attempt to solve the reinforcement learning test environment called Reacher, which simulates 20 robotic arms in 3D and tasks the agent with controlling their movements in order to reach a specified target region. The required score of 30 (average return over 100 consecutive episodes) was achieved after 92 episodes, using a version of proximal policy optimisation.
+This project is an attempt to solve the reinforcement learning test environment called Reacher, which simulates 20 robotic arms in 3D and tasks the agent with controlling their movements in order to reach a specified target region. The required score of 30 (average return over 100 consecutive episodes) was achieved after 192 episodes, using a version of proximal policy optimisation.
 
 ## Environment
 
