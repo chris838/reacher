@@ -1,6 +1,6 @@
 # Solving Reacher using Proximal Policy Optimisation
 
-This project is an attempt to solve the reinforcement learning test environment called Reacher, which simulates 20 robotic arms in 3D and tasks the agent with controlling their movements in order to reach a specified target region. The required score of 30 (average return over 100 consecutive episodes) was achieved after 192 episodes, using a version of proximal policy optimisation.
+This project is an attempt to solve the reinforcement learning test environment called Reacher, which simulates 20 robotic arms in 3D and tasks the agent with controlling their movements in order to reach a specified target region. The required score of 30 (average return over 100 consecutive episodes) was achieved after 173 episodes, using a version of proximal policy optimisation.
 
 ## Environment
 
@@ -30,18 +30,34 @@ If you haven't already, please follow the instructions in the [DRLND GitHub repo
 For this project, you will not need to install Unity - this is because we have already built the environment for you, and you can download it from one of the links below. You need only select the environment that matches your operating system:
 
 #### Version 1: One (1) Agent
-Linux: click here
-Mac OSX: click here
-Windows (32-bit): click here
-Windows (64-bit): click here
+Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Linux.zip)
+Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher.app.zip)
+Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Windows_x86.zip)
+Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Windows_x86_64.zip)
 
 #### Version 2: Twenty (20) Agents
-Linux: click here
-Mac OSX: click here
-Windows (32-bit): click here
-Windows (64-bit): click here
+Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Linux.zip)
+Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher.app.zip)
+Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Windows_x86.zip)
+Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Windows_x86_64.zip)
+
 Then, place the file in the p2_continuous-control/ folder in the DRLND GitHub repository, and unzip (or decompress) the file.
 
 (For Windows users) Check out this link if you need help with determining if your computer is running a 32-bit version or 64-bit version of the Windows operating system.
 
 (For AWS) If you'd like to train the agent on AWS (and have not enabled a virtual screen), then please use this link (version 1) or this link (version 2) to obtain the "headless" version of the environment. You will not be able to watch the agent without enabling a virtual screen, but you will be able to train the agent. (To watch the agent, you should follow the instructions to enable a virtual screen, and then download the environment for the Linux operating system above.)
+
+
+## Running
+
+Dependencies are listed in `environment.yml`. `HoloViews` and `streamz` are used to show live training progress, though these could be commented out if required.
+
+To install:
+
+    conda env create --file environment.yml
+
+To start the notebook:
+
+    jupyter notebook Continuous_Control_PPO.ipynb
+
+Follow instructions in the notebook to train and run the agent.

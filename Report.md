@@ -1,7 +1,7 @@
 # Udacity Deep Reinforcement Learning Nanodegree
 # Project 2: Continuous Control
 
-This project is an attempt to solve the reinforcement learning test environment called Reacher, which simulates 20 robotic arms in 3D and tasks the agent with controlling their movements in order to reach a specified target region. The required score of 30 (average return over 100 consecutive episodes) was achieved after 192 episodes, using a version of proximal policy optimisation.
+This project is an attempt to solve the reinforcement learning test environment called Reacher, which simulates 20 robotic arms in 3D and tasks the agent with controlling their movements in order to reach a specified target region. The required score of 30 (average return over 100 consecutive episodes) was achieved after 173 episodes, using a version of proximal policy optimisation.
 
 
 ## Learning algorithm
@@ -51,13 +51,11 @@ Below is the summary for the value network. Again we use `ReLU` on the hidden la
     Non-trainable params: 0
     ----------------------------------------------------------------
 
-
 # Results
 
-As required, the agent is able to receive an average reward (over 100 episodes, and over all 20 agents) of at least +30. This is reached after just 192 episodes.
+As required, the agent is able to receive an average reward (over 100 episodes, and over all 20 agents) of at least +30. This is reached after just 173 episodes.
 
 ![Reward Graph of PPO](https://github.com/chris838/reacher/blob/master/ppo-reacher.png)
-
 
 
 # Future ideas for improvement
@@ -70,3 +68,16 @@ The GAE baseline used to augment the PPO policy estimate could be swapped out fo
 # Bugs and fixes
 
 The sigmoid activation function on the output of the value network is incorrect and this should be fixed. Another minor bug, which didn't adversely effect training, is that the final state and state value is missing from the rollout.
+
+
+# Hyperparameters
+
+    | Hyperparameter Name 	| Value 	|
+    |---------------------	|-------	|
+    | Adam learning rate  	| 3e-4  	|
+    | Rollout length      	| 500   	|
+    | Discount (gamma)    	| 0.99  	|
+    | Mini-batch size      	| 64    	|
+    | Clipping epsilon    	| 0.1   	|
+    | PPO epochs          	| 10    	|
+    | GAE lambda          	| 0.95  	|
